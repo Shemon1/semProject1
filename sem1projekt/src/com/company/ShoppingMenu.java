@@ -22,7 +22,6 @@ public class ShoppingMenu {
         productList.add(new Product(100, 505, "industrial vacuum cleaner"));
         productList.add(new Product(110, 303, "power washer"));
 
-
         menu();
     }
 
@@ -73,7 +72,7 @@ public class ShoppingMenu {
 
                 // TODO: create account
             }
-            System.out.println("Which one do you to order?");
+            System.out.println("Which product would you like to order?");
             for (int a = 0; a < productList.size(); a++) { // for loop, iterates through each item in stock
                 System.out.println((a + 1) + ". | stock: " + productList.get(a).numberInStock + "\t| " +
                         productList.get(a).price + "\t | - " + productList.get(a).name.toUpperCase() + " |"); // We add 1 here for visuals

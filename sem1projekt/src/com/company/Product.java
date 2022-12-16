@@ -10,3 +10,4 @@ public class Product {
     public int numberInStock;
     public String name;
 }
+
