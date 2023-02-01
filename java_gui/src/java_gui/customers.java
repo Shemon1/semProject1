@@ -1,29 +1,33 @@
 package java_gui;
 
 import java.util.ArrayList;
-import java_gui.new_customer;
+import java_gui.NewCustomer;
 
-public class customers {
+public class Customers {
     private ArrayList<Customer> customers;
     
-    public customers() {
+    public Customers() {
         customers = new ArrayList<>();
     }
     
     public void addCustomer(Customer customer) {
         customers.add(customer);
     }
+    
+    public ArrayList<Customer> getCustomers() {
+        return customers;
+    }
 }
 
 class Customer {
     private int customerNumber;
     private String fullName;
-    private int phoneNumber;
+    private String phoneNumber;
     private String address;
-    private int zipCode;
+    private String zipCode;
     private String city;
     
-    public Customer(int customerNumber, String fullName, int phoneNumber, String address, int zip, String city) {
+    public Customer(int customerNumber, String fullName, String phoneNumber, String address, String zip, String city) {
         this.customerNumber = customerNumber;
         this.fullName = fullName;
         this.phoneNumber = phoneNumber;
@@ -37,7 +41,7 @@ class Customer {
         return fullName;
     }
 
-    public int getPhoneNumber() {
+    public String getPhoneNumber() {
         return phoneNumber;
     }
 
@@ -45,7 +49,7 @@ class Customer {
         return address;
     }
 
-    public int getZip() {
+    public String getZip() {
         return zipCode;
     }
 

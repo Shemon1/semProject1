@@ -5,7 +5,7 @@ import java.awt.*;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 
-public class login {
+public class Login {
 	static JTextField usernameField = new JTextField(15);
     static JPasswordField passwordField = new JPasswordField(15);
     public static void main(String[] args) {
@@ -66,7 +66,7 @@ public class login {
                 if(e.getSource()==loginButton) {
                     if(username.equals("Anders") && password.equals("123")) {
                         JOptionPane.showMessageDialog(null, "Login Successful");
-                        menu menuPage = new menu();
+                        Menu menuPage = new Menu();
                         
                         // Hide the login frame after login
                         loginFrame.setVisible(false);

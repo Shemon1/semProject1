@@ -1,5 +1,5 @@
 package java_gui;
 
-public class economy {
+public class Economy {
 
 }
